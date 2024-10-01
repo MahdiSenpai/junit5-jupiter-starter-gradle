@@ -1,8 +1,13 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class FacteursPremier {
 
 
-    public List generate(int i) {
+    public List<Integer> generate(int i) {
+    List lst =  new ArrayList();
+
+    lst.add(2);
+    return lst;
     }
 }

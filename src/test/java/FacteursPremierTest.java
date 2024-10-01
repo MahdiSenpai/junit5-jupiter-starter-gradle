@@ -1,18 +1,39 @@
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
 class FacteursPremierTest {
 
     @Test
-    public static void test_Generates_liste_vide(){
+    void test_Generates_liste_vide(){
     FacteursPremier F = new FacteursPremier();
-    List resultat ;
+    List resultat = new ArrayList();
     resultat = F.generate(1);
-    assertThat(resultat).isEqualTo(null);
+    assertThat(resultat).isEqualTo( new ArrayList());
 
     }
 
-}s
+/*
+    @Test
+    void test_Generates_liste_retourne_2(2){
+        // GIVEN
+        FacteursPremier F = new FacteursPremier();
+        List resultat ;
+        // WHEN
+        // THEN
+        resultat = F.generate(1);
+        assertThat(resultat).isEqualTo(2);
+
+    }
+
+*/
+
+
+
+
+
+}
