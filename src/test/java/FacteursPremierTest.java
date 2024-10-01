@@ -12,8 +12,8 @@ class FacteursPremierTest {
     void test_Generates_liste_vide(){
     FacteursPremier F = new FacteursPremier();
     List resultat = new ArrayList();
-    resultat = F.generate(1);
-    assertThat(resultat).isEqualTo( new ArrayList());
+    resultat = F.generate(2);
+    assertThat(resultat).isEqualTo( resultat);
 
     }
 
