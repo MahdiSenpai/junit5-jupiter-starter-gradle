@@ -26,13 +26,23 @@ class FacteursPremierTest {
         List<Integer> expectedFacteurs = new ArrayList<>(List.of());
         expectedFacteurs.add(2);
         //WHEN
-        List<Integer> ActuelFacteurs = FacteursPremier.generate1(2);
+        List<Integer> ActuelFacteurs = FacteursPremier.generate(2);
 
         //THEN
         assertThat(ActuelFacteurs).isEqualTo(expectedFacteurs);
     }
 
+    @Test
+    void generate_3_devrait_retourner_liste_contenant_3(){
+        //GIVEN
+        List<Integer> expectedFacteurs = new ArrayList<>(List.of());
+        expectedFacteurs.add(3);
+        //WHEN
+        List<Integer> ActuelFacteurs = FacteursPremier.generate(3);
 
+        //THEN
+        assertThat(ActuelFacteurs).isEqualTo(expectedFacteurs);
+    }
 
 
 
