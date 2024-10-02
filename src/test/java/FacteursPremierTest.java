@@ -44,7 +44,18 @@ class FacteursPremierTest {
         assertThat(ActuelFacteurs).isEqualTo(expectedFacteurs);
     }
 
+    @Test
+    void generate_4_devrait_retourner_liste_contenant_2_2(){
+        //GIVEN
+        List<Integer> expectedFacteurs = new ArrayList<>(List.of());
+        expectedFacteurs.add(2);
+        expectedFacteurs.add(2);
+        //WHEN
+        List<Integer> ActuelFacteurs = FacteursPremier.generate(4);
 
+        //THEN
+        assertThat(ActuelFacteurs).isEqualTo(expectedFacteurs);
+    }
 
 
 
