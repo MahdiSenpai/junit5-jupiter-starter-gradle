@@ -70,5 +70,16 @@ class FacteursPremierTest {
     }
 
 
-
+    @Test
+    void generate_8_devrait_retourner_liste_contenant_2_2_2(){
+        //GIVEN
+        List<Integer> expectedFacteurs = new ArrayList<>();
+        expectedFacteurs.add(2);
+        expectedFacteurs.add(2);
+        expectedFacteurs.add(2);
+        //WHEN
+        List<Integer> ActuelFacteurs = FacteursPremier.generate(8);
+        //THEN
+        assertThat(ActuelFacteurs).isEqualTo(expectedFacteurs);
+    }
 }
